@@ -1,5 +1,4 @@
 #include "queue.hpp"
-#include <iostream>
 
 int main() {
     Queue<int> q1;
