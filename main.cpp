@@ -1,8 +1,8 @@
+#include "queue.hpp"
 #include <iostream>
-#include "queue.h"
 
 int main() {
-    Queue q1;
+    Queue<int> q1;
     q1.CreateQueue();
     q1.Push(1);
     q1.Push(2);
@@ -10,6 +10,10 @@ int main() {
     q1.Push(4);
     q1.Push(5);
     std::cout << q1.Size() << std::endl;
+    std::cout << q1.Pop() << std::endl;
+    std::cout << q1.Pop() << std::endl;
+    std::cout << q1.Pop() << std::endl;
+    std::cout << q1.Pop() << std::endl;
     std::cout << q1.Pop() << std::endl;
     std::cout << q1.Pop() << std::endl;
     std::cout << q1.Size() << std::endl;

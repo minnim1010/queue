@@ -4,11 +4,10 @@
 
 #ifndef QUEUE_QUEUE_H
 #define QUEUE_QUEUE_H
-#include <iostream>
-
 
 typedef int Data;
 
+template<typename Data>
 class Queue {
 private:
     struct Node{
@@ -28,6 +27,5 @@ public:
     int Size();
     void DeleteQueue();
 };
-
 
 #endif //QUEUE_QUEUE_H
