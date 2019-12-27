@@ -45,9 +45,17 @@ Data Queue::Pop(){
     }
 }
 Data Queue::Front(){
+    if(Queue::Empty()){
+        std::cout << "Queue is Empty!" << std::endl;
+        return -1;
+    }
     return this->head->element;
 }
 Data Queue::Back(){
+    if(Queue::Empty()){
+        std::cout << "Queue is Empty!" << std::endl;
+        return -1;
+    }
     return this->tail->element;
 }
 bool Queue::Empty(){
