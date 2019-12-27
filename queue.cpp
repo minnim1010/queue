@@ -60,9 +60,8 @@ int Queue::Size(){
 void Queue::DeleteQueue(){
     Node *i;
 
-    while(true){
+    while(this->head != this->tail){
         i = this->head;
-        if(this->head == this->tail) break;
         this->head = this->head->next;
         delete i;
     }
