@@ -44,6 +44,7 @@ Data Queue::Pop(){
         return rv;
     }
 }
+
 Data Queue::Front(){
     if(Queue::Empty()){
         std::cout << "Queue is Empty!" << std::endl;
@@ -51,6 +52,7 @@ Data Queue::Front(){
     }
     return this->head->element;
 }
+
 Data Queue::Back(){
     if(Queue::Empty()){
         std::cout << "Queue is Empty!" << std::endl;
@@ -58,13 +60,16 @@ Data Queue::Back(){
     }
     return this->tail->element;
 }
+
 bool Queue::Empty(){
     if(this->size == 0) return true;
     else return false;
 }
+
 int Queue::Size(){
     return this->size;
 }
+
 void Queue::DeleteQueue(){
     Node *i;
 
