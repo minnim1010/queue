@@ -3,7 +3,6 @@
 //
 
 #include "queue.h"
-#include <iostream>
 
 void Queue::CreateQueue(){
     this->size = 0;
