@@ -12,7 +12,7 @@ void Queue::CreateQueue(){
     return;
 }
 
-void Queue::Push(int element){
+void Queue::Push(Data element){
     if(this->head == nullptr)
         this->head = this->tail = new Node;
     else {
