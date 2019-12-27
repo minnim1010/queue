@@ -19,7 +19,7 @@ private:
     bool Empty();
 public:
     void CreateQueue();
-    void Push(int element);
+    void Push(Data element);
     Data Pop();
     Data Front();
     Data Back();
