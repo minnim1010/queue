@@ -4,10 +4,10 @@
 
 #include "queue.h"
 
-void Queue::CreateQueue(){
-    this->size = 0;
+void Queue::CreateQueue(){  
     this->head = nullptr;
     this->tail = nullptr;
+    this->size = 0;
     return;
 }
 
